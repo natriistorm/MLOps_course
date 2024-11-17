@@ -1,9 +1,10 @@
+#include <pearson.h>
 #include <iostream>
 #include <vector>
 #include <cmath>
 #include <stdexcept>
 
-double pearsonCorrelation(const std::vector<double>& x, const std::vector<double>& y) {
+double Correlations::pearsonCorrelation(const std::vector<double>& x, const std::vector<double>& y) {
     if (x.size() != y.size()) {
         throw std::invalid_argument("Vectors must have the same length.");
     }
